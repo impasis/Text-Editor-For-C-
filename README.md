@@ -34,7 +34,7 @@
 Вот например я использую компилятор GNU, и мои команды будут выглядить так:
 
 ```c++
-gnu name.cpp -o main
+g++ name.cpp -o main
 main 
 ```
 
@@ -42,7 +42,7 @@ main
 
 ```c++
 cls
-gnu name.cpp -o main
+g++ name.cpp -o main
 main
 ```
 
@@ -55,7 +55,7 @@ main
 ### Пример
 ```c++
 cls
-gnu C:\Users\usr\name.cpp -o main
+g++ C:\Users\usr\name.cpp -o main
 main
 ```
 
