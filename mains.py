@@ -6,6 +6,7 @@ Color Theme - Monokai
 
 from tkinter import *
 from tkinter import filedialog
+import webbrowser
 import ctypes
 import re
 import os
@@ -140,6 +141,9 @@ class Main:
 
         return matches
 
+    def open_link(self):
+        webbrowser.open_new("https://github.com/impasis/Text-Editor-For-C-/blob/main/README.md")
+
     # Func. for a create and draw buttons
     def buttons(self):
         btn_open = Button(self.screen, text='Open File', command=self.open_file)
@@ -148,7 +152,7 @@ class Main:
         btn_create = Button(self.screen, text="New File", command=create_file)
         btn_cmd = Button(self.screen, text="Commands", command=self.choice_command)
         btn_run = Button(self.screen, text="▶", command=self.start_compilation)
-        btn_help = Button(self.screen, text="Help")
+        btn_help = Button(self.screen, text="Help", command=self.open_link)
         btn_close = Button(self.screen, text="X", command=self.screen.destroy)
         btn_open.place(x=0, y=0, width=80, height=36)
         btn_save.place(x=80, y=0, width=80, height=36)
